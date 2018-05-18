@@ -5,6 +5,7 @@ lazy val root = (project in file(".")).
       scalaVersion := "2.12.5",
       version      := "0.1.0-SNAPSHOT"
     )),
-    name := "com.functionalai.mountaincar.MountainCar-ReinforcementLearning",
+    mainClass in (Compile, run) := Some("com.functionalai.mountaincar.Main"),
+    name := "MountainCar-ReinforcementLearning",
     libraryDependencies ++= Seq()
   )

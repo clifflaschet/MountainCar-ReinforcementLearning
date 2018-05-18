@@ -1,4 +1,5 @@
-import com.functionalai.mountaincar.{MountainCar, MountainCarWindow}
+package com.functionalai.mountaincar
+
 import com.functionalai.mountaincar.reinforcementlearning._
 
 object Main extends App {
