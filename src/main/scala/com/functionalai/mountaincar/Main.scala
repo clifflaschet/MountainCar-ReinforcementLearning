@@ -8,36 +8,38 @@ object Main extends App {
   val car = new MountainCar
   val window = new MountainCarWindow(car)
 
-  Thread.sleep(100)
-
   //Initialize the Q-learning agent
   val qLearningAgent = new QLearningAgent
 
-  //Show the performance of the agent after 200 episodes
+  //Show the performance of the agent after 0 episodes
   train(qLearningAgent, 1, 250, true)
 
   //Train the agent by running a number of training episodes
   train(qLearningAgent, 100, 500, false)
 
-  //Show the performance of the agent after 200 episodes
+  //Show the performance of the agent after 100 episodes
+  Thread.sleep(2000)
   train(qLearningAgent, 1, 250, true)
 
   //Train the agent by running a number of training episodes
   train(qLearningAgent, 200, 500, false)
 
-  //Show the performance of the agent after 4000 episodes
+  //Show the performance of the agent after 300 episodes
+  Thread.sleep(2000)
   train(qLearningAgent, 1, 250, true)
 
   //Train the agent by running a number of training episodes
   train(qLearningAgent, 400, 500, false)
 
-  //Show the performance of the agent after 600 episodes
+  //Show the performance of the agent after 700 episodes
+  Thread.sleep(2000)
   train(qLearningAgent, 1, 250, true)
 
   //Train the agent by running a number of training episodes
-  train(qLearningAgent, 2500, 500, false)
+  train(qLearningAgent, 3000, 500, false)
 
-  //Show the performance of the agent after 600 episodes
+  //Show the performance of the agent after 3700 episodes
+  Thread.sleep(2000)
   train(qLearningAgent, 1, 250, true)
 
   def train(agent: Agent, remainingEpisodes: Int, maxActionsPerEpisode: Int, render: Boolean): Agent = {

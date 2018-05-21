@@ -31,9 +31,9 @@ public class MountainCarWindow extends JFrame {
 			public void actionPerformed(ActionEvent e) {setRandomAngle();}
 		    });
 		//This is ugly, but easy ...
-		JPanel buttonPanel = new JPanel();
-		buttonPanel.add(randomButton, null);
-		add(buttonPanel, BorderLayout.SOUTH);
+		//JPanel buttonPanel = new JPanel();
+		//buttonPanel.add(randomButton, null);
+		//add(buttonPanel, BorderLayout.SOUTH);
 		//Open in center of screen
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		Dimension frameSize = view.getPreferredSize(); 
