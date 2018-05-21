@@ -69,9 +69,9 @@ object Main extends App {
 
       //Apply the action to the car
       car.apply(action match{
-        case DoNothing => 0
-        case Forward => 1
-        case StrongForward => 2
+        case Left => 0
+        case DoNothing => 1
+        case Right => 2
       })
 
       //Share the effect of the action with the agent
